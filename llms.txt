@@ -1,0 +1,29 @@
+# FAIR MCP Documentation
+
+FAIRMCP Team
+2025-04-29
+
+> FAIRMCP provides a Model Context Protocol (MCP) server for FAIR documentation. This repository combines FAIR principles (Findable, Accessible, Interoperable, Reusable) documentation with a Model Context Protocol (MCP) server implementation.
+
+The following markdown documents are available in this repository for LLMs to reference.
+
+## Core Documentation
+
+- [CLAUDE](CLAUDE.md): Project guidelines
+- [FAIR MCP Documentation](index.md): Main page
+
+## Principles
+
+- [FAIR Principles](docs/principles/index.md): FAIR principles documentation
+
+## Implementations
+
+- [FAIR Implementation](docs/implementations/index.md): Implementation guide
+
+## Optional
+
+- [anthropic_agents](llmstxt/anthropic_agents.md)
+- [Extracts form Antropic Prompt Engineering Guide](llmstxt/anthropic_prompt.md)
+- [JSON-LD 1.1](llmstxt/json-ld-full.md)
+- [The /llms.txt file](llmstxt/llmstxt.md)
+- [Quarto Hello](llmstxt/quarto-hello.md)

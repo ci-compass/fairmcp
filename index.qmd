@@ -1,0 +1,55 @@
+---
+title: "FAIR MCP Documentation"
+format: 
+  html:
+    toc: true
+    code-fold: true
+metadata:
+  json-ld: |
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "FAIR MCP Documentation",
+      "description": "FAIR Principles Documentation with Model Context Protocol Support",
+      "url": "https://ci-compass.github.io/fairmcp",
+      "about": {
+        "@type": "DefinedTerm",
+        "name": "FAIR Principles",
+        "url": "https://www.go-fair.org/fair-principles/"
+      }
+    }
+---
+
+## Welcome to FAIR MCP Documentation
+
+This site provides comprehensive documentation about FAIR principles (Findable, Accessible, Interoperable, Reusable) and their implementation through the Model Context Protocol (MCP).
+
+### Test Python Code
+
+```{python}
+print("Hello from Python!")
+
+# A simple function to demonstrate code execution
+def fair_acronym():
+    return {
+        "F": "Findable",
+        "A": "Accessible",
+        "I": "Interoperable",
+        "R": "Reusable"
+    }
+
+fair = fair_acronym()
+for letter, meaning in fair.items():
+    print(f"{letter}: {meaning}")
+```
+
+### What You'll Find Here
+
+- [FAIR Principles](docs/principles/index.qmd): Learn about the FAIR data principles and why they matter
+- [Implementation Guides](docs/implementations/index.qmd): Practical guidance for implementing FAIR in your projects
+
+### About This Project
+
+FAIRMCP combines FAIR principles with Model Context Protocol (MCP) to create a comprehensive framework for scientific data management.
+
+According to @wilkinson2016fair, FAIR principles are essential for maximizing the value of research data.

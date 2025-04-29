@@ -8,6 +8,9 @@ FAIRMCP is a GitHub repository that provides a Model Context Protocol (MCP) serv
 - Quarto-based documentation site deployed on GitHub Pages
 - Schema.org metadata integration
 
+## Claude Code References
+The llmstxt folder has markdown references that may be of use to claude code.Ok
+
 ## Setup & Environment
 
 ### Package Management
@@ -17,7 +20,7 @@ FAIRMCP is a GitHub repository that provides a Model Context Protocol (MCP) serv
 - Activate virtual environment: `source .venv/bin/activate` (bash/zsh) or `.venv\Scripts\activate` (Windows)
 
 ### Installation Commands
-# Install Quarto CLI (required for building the site)
+# Install Quarto CLI (required for building the site)/
 Quarto is installed via homebrew on macOS:
 ```bash
 brew install --cask quarto
@@ -157,7 +160,7 @@ The MCP server should implement these tools:
 ## Important Commands
 
 ```bash
-# Build the site
+# Build the site (HTML and CommonMark formats)
 quarto render
 
 # Preview the site locally
@@ -166,9 +169,20 @@ quarto preview
 # Run tests
 pytest
 
-# Update llms.txt
+# Update llms.txt index for LLMs
 python scripts/generate_llms_txt.py
+
+# Build only CommonMark files
+quarto render --to commonmark
 ```
+
+## CommonMark and llms.txt
+
+The repository uses CommonMark format for LLM-friendly documentation, following the [llms.txt specification](https://llmstxt.org/).
+
+When you run `quarto render`, all Quarto documents are rendered to both HTML (for humans) and CommonMark (for LLMs). The CommonMark files are named with the original filename followed by `.md`.
+
+The `generate_llms_txt.py` script creates an index of all available markdown documentation in the repository, which is saved as `llms.txt` in the repository root. This serves as an entry point for LLMs to discover and navigate the documentation.
 
 ## Style Guidelines
 

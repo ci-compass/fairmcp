@@ -7,4 +7,5 @@ requires-python = ">=3.11"
 dependencies = [
     "colorama>=0.4.6",
     "jupyter>=1.1.1",
+    "jupyter-cache>=1.0.1",
 ]

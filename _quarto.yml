@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: _site
+  
+website:
+  title: "FAIR MCP Documentation"
+  site-url: "https://ci-compass.github.io/fairmcp"
+  description: "FAIR Principles Documentation with Model Context Protocol Support"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: docs/principles/index.qmd
+        text: FAIR Principles
+      - href: docs/implementations/index.qmd
+        text: Implementation
+        
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    code-fold: true
+    code-tools: true
+    include-after-body: _templates/footer.html
+    include-in-header: _templates/metadata.html
+  commonmark:
+    toc: true
+    
+execute:
+  enabled: true
+  cache: true
+  freeze: auto
+    
+bibliography: bibliography.bib
+csl: ieee.csl
