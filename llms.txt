@@ -9,8 +9,7 @@ The following markdown documents are available in this repository for LLMs to re
 
 ## Core Documentation
 
-- [CLAUDE](CLAUDE.md): Project guidelines
-- [FAIR MCP Documentation](index.md): Main page
+- [FAIR MCP Documentation](docs/principles/index.qmd): Main page
 
 ## Principles
 
