@@ -9,7 +9,7 @@ The following markdown documents are available in this repository for LLMs to re
 
 ## Core Documentation
 
-- [FAIR MCP Documentation](docs/principles/index.qmd): Main page
+- [FAIR MCP Documentation](https://github.com/ci-compass/fairmcp/blob/main/docs/principles/index.qmd): Main page
 
 ## Principles
 
